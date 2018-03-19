@@ -7,7 +7,7 @@
 			"R":"199",
 			"M":"299",
 			"L":"399",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/deluxeveg.png",
 	},
 	{
@@ -18,7 +18,7 @@
 			"R":"149",
 			"M":"189",
 			"L":"249",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/vegextra.png",
 	},
 	{
@@ -29,7 +29,7 @@
 			"R":"150",
 			"M":"200",
 			"L":"250",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/five-peppers.png",
 	},
 	{
@@ -40,7 +40,7 @@
 			"R":"259",
 			"M":"289",
 			"L":"389",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/margherita.png",
 	},
 	{
@@ -51,7 +51,7 @@
 			"R":"299",
 			"M":"399",
 			"L":"499",
-		},
+		}
 		"image":"",
 	},
 	{
@@ -62,7 +62,7 @@
 			"R":"209",
 			"M":"308",
 			"L":"405",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/mexgreen.png",
 	},
 	{
@@ -73,7 +73,7 @@
 			"R":"299",
 			"M":"389",
 			"L":"450",
-		},
+		}
 		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/corn_cheese.png",
 	},
 ]
