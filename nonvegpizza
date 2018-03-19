@@ -1,0 +1,24 @@
+var pizzaChicken = [
+	{
+		"name":"CHICKEN GOLDEN DELIGHT",
+		"description":"Double Pepper Barbecue Chicken, Goldern Corn, Extra Cheese",
+		"category": "Non Veg",
+		"sizes": {
+			"R":"280",
+			"M":"390",
+			"L":"550",
+		},
+		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/golden.png",
+	},
+	{
+		"name":"Chicken Fiesta",
+		"description":"Grilled chicken Rashers, Peri-peri chicken, Onion, Capsicum",
+		"category": "Non Veg",
+		"sizes": {
+			"R":"289",
+			"M":"378",
+			"L":"579",
+		},
+		"image":"https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/chunky-chicken.png",
+	},
+]
