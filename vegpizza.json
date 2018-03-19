@@ -43,17 +43,6 @@
 		}]
 	},
 	{
-		"name": "Cheese and Corn",
-		"description": "Cheese, Golden Corn",
-		"category": "Veg",
-		"image": "",
-		"sizes": [{
-			"R": "299",
-			"M": "399",
-			"L": "499"
-		}]
-	},
-	{
 		"name": "Mexican Green Wave",
 		"description": "Onion, Crisp Capsicum, Fresh Tomato, Jalapeno sprinkled with exotic Mexican Herbs",
 		"category": "Veg",
