@@ -2,7 +2,7 @@
 		"name": "Deluxe Veggie",
 		"description": "Onion, Capsicum, Grilled Mashroom, Golden Corn, Paneer",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/deluxeveg.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/deluxeveg.png",
 		"sizes": [{
 			"R": "199",
 			"M": "299",
@@ -13,7 +13,7 @@
 		"name": "Veg Extravaganza",
 		"description": "Black Olives, Onion, Capsicum,Grilled Mushroom, Tomato, Golden Corn, Jalapeno, Extra Cheese",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/vegextra.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/vegextra.png",
 		"sizes": [{
 			"R": "149",
 			"M": "189",
@@ -24,7 +24,7 @@
 		"name": "5 Pepper",
 		"description": "Capsicum, Yellow, Red Bell Pepper, Jalapeno, Red Paprika",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/five-peppers.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/five-peppers.png",
 		"sizes": [{
 			"R": "150",
 			"M": "200",
@@ -35,7 +35,7 @@
 		"name": "Double Cheese Margherita",
 		"description": "Loaded with extra cheese!",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/margherita.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/margherita.png",
 		"sizes": [{
 			"R": "259",
 			"M": "289",
@@ -57,7 +57,7 @@
 		"name": "Mexican Green Wave",
 		"description": "Onion, Crisp Capsicum, Fresh Tomato, Jalapeno sprinkled with exotic Mexican Herbs",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/mexgreen.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/mexgreen.png",
 		"sizes": [{
 			"R": "209",
 			"M": "308",
@@ -68,7 +68,7 @@
 		"name": "Cheese and Corn",
 		"description": "Cheese, Golden Corn",
 		"category": "Veg",
-		"image": "https://github.com/vinodtik/pizza-ordering/blob/master/assets/images/corn_cheese.png",
+		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/corn_cheese.png",
 		"sizes": [{
 			"R": "299",
 			"M": "389",
