@@ -1,79 +1,55 @@
-var pizzaVeg = [
-	{
-		"name":"Deluxe Veggie",
-		"description":"Onion, Capsicum, Grilled Mashroom, Golden Corn, Paneer",
-		"prince": "299",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Veg Extravaganza",
-		"description":"Black Olives, Onion, Capsicum,Grilled Mushroom, Tomato, Golden Corn, Jalapeno, Extra Cheese",
-		"prince": "349",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"5 Pepper",
-		"description":"Capsicum, Yellow, Red Bell Pepper, Jalapeno, Red Paprika",
-		"prince": "299",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Double Cheese Margherita",
-		"description":"Loaded with extra cheese!",
-		"prince": "305",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Cheese and Corn",
-		"description":"Cheese, Golden Corn",
-		"prince": "399",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Mexican Green Wave",
-		"description":"Onion, Crisp Capsicum, Fresh Tomato, Jalapeno sprinkled with exotic Mexican Herbs",
-		"prince": "399",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Cheese and Corn",
-		"description":"Cheese, Golden Corn",
-		"prince": "399",
-		"category": "Veg",
-		"size": "M",
-		"image":"",
-	},
-]
+var pizzaContainer = document.getElementById("showVeg");
+var request = new XMLHttpRequest();
+request.open('GET','https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/vegpizza.json');
+request.onload = function(){
+	var result = JSON.parse(request.responseText);
+	renderPizza(result);
+};
+function renderPizza(result) {
+	var html = '';
+	var price;
+	html +="<div class='row'>";
+	var colnum = 1;
+	for(let i=0; i<result.length; i++){
+		html +="<div class='col-xs-4 pizza-box'><p class='pizza-title'>"+result[i].name+"</p><img class='thumbnail pizza-img' src="+result[i].image+"><p class='desc'><small>"+ result[i].description +"</small></p><p><button class='btn btn-primary add_order' data-title='"+result[i].name+"' data-price='"+result[i].price+"'>Add</button><span class='price'>&#x20B9; "+ result[i].price +"</span></p></div>";
+		if(colnum == 3){
+			html+="</div><div class='row'>";
+			colnum=1;
+		}
+		else{
+			colnum++;
+		}
+	}
+	html+="</div>";
+	pizzaContainer.insertAdjacentHTML('beforeend',html);
+}
+request.send();
 
-var pizzaChicken = [
-	{
-		"name":"CHICKEN GOLDEN DELIGHT",
-		"description":"Double Pepper Barbecue Chicken, Goldern Corn, Extra Cheese",
-		"prince": "499",
-		"category": "Non Veg",
-		"size": "M",
-		"image":"",
-	},
-	{
-		"name":"Chicken Fiesta",
-		"description":"Grilled chicken Rashers, Peri-peri chicken, Onion, Capsicum",
-		"prince": "399",
-		"category": "Non Veg",
-		"size": "M",
-		"image":"chunky-chicken.png",
-	},
-]
-
-document.write("");
+$(document).ready(function(){
+	var total = 0;
+	$('.container').on('click','.add_order',function(){
+		var price = $(this).data('price');
+		var title = $(this).data('title');
+		total +=price;
+		$(".appendOrders").append("<p>"+title+" ("+price+") <button class='btn btn-sm btn-danger remove' data-price="+price+"><span class='fa fa-trash'></span></button></p>");
+		$("#total").html("Total: "+total);
+	});
+	$('.container').on('click','.remove', function(){
+		// alert('clicked');
+		var p = $(this).data('price');
+		total -=p;
+		$("#total").html("Total: "+total);
+		$(this).parent('p').remove();
+	});
+	$('.confirm').click(function(){
+		if(total == 0){
+			alert("No items added");
+		}
+		else{
+			alert("Thank you! your order will be ready within 60 Minutes.");
+			$('.appendOrders p').remove();
+			total = 0;
+			$("#total").html("Total: "+total);
+		}
+	});
+});
