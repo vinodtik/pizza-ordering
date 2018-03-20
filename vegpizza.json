@@ -3,7 +3,8 @@
 		"description": "Onion, Capsicum, Grilled Mashroom, Golden Corn, Paneer",
 		"category": "Veg",
 		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/deluxeveg.png",
-		"price": "199"
+		"price": "199",
+		"discount":2,
 	},
 	{
 		"name": "Veg Extravaganza",
