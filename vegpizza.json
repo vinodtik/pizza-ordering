@@ -4,7 +4,7 @@
 		"category": "Veg",
 		"image": "https://raw.githubusercontent.com/vinodtik/pizza-ordering/master/assets/images/deluxeveg.png",
 		"price": "199",
-		"discount":2,
+		"discount":2
 	},
 	{
 		"name": "Veg Extravaganza",
